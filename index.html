@@ -4,95 +4,180 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Devyanshu Bharti - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
   <style>
+    /* General Styling */
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f4;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f4f8;
       color: #333;
+      line-height: 1.6;
     }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .section {
-      margin-bottom: 30px;
+
+    /* Navbar */
+    #navbar {
+      background-color: #1a1a40;
+      color: white;
       padding: 20px;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
     }
+
+    #navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    /* Section Cards */
+    .section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+    }
+
+    .section h2 {
+      color: #1a1a40;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
     ul {
-      margin: 10px 0;
       padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Contact Info */
+    .contact {
+      font-size: 15px;
+      margin-top: 8px;
+    }
+
+    .contact a {
+      color: #1a1a40;
+      text-decoration: none;
+    }
+
+    /* Responsive Text Formatting */
+    @media (max-width: 600px) {
+      #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #navbar a {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Devyanshu Bharti</h1>
-  <p>Email: <a href="mailto:devyanshubharti@gmail.com">devyanshubharti@gmail.com</a> | 
-     Phone: +91 9142602084 | 
-     <a href="https://www.linkedin.com/in/devyanshu-bharti-2a2070267/" target="_blank">LinkedIn</a>
-  </p>
 
-  <div class="section">
-    <h2>Summary</h2>
-    <p>A strong foundation in data analytics and visualization supported by hands-on experience in developing and analyzing datasets. Passionate about leveraging technical skills to drive impactful insights and contribute to meaningful projects. Continuously learning through academic and professional certifications.</p>
+  <!-- Navbar -->
+  <div id="navbar">
+    <h1>Devyanshu Bharti</h1>
+    <div>
+      <a href="mailto:devyanshubharti@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/devyanshu-bharti-2a2070267/" target="_blank">LinkedIn</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>IIM Bangalore</strong> – BBA in Digital Business & Entrepreneurship (2024–2027)</li>
-      <li><strong>KIIT, Bhubaneswar</strong> – BTech in Computer Science and Communication Engineering (2022–2026)
-        <ul>
-          <li>1st Year CGPA: 8.34</li>
-          <li>2nd Year CGPA: 7.99</li>
-        </ul>
-      </li>
-      <li><strong>DAV Public School, Hehal, Ranchi</strong>
-        <ul>
-          <li>Class 10: 94% (2020)</li>
-          <li>Class 12: 80% (2022)</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+  <div class="container">
 
-  <div class="section">
-    <h2>Internship</h2>
-    <p><strong>Multiplier AI</strong> – Hyderabad, Telangana, India (May 2024 – July 2024)</p>
-    <ul>
-      <li>Developed datasets tracking the number of Twitter posts from hospitals</li>
-      <li>Visualized Twitter data for insights</li>
-      <li>Improved data collection, analysis, and visualization techniques</li>
-    </ul>
-  </div>
+    <!-- Summary -->
+    <div class="section">
+      <h2>Summary</h2>
+      <p>A strong foundation in data analytics and visualization supported by hands-on experience in developing and analyzing datasets. Passionate about leveraging technical skills to drive impactful insights and contribute to meaningful projects.</p>
+    </div>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> Python, Java, C, HTML, CSS</li>
-      <li><strong>Frameworks & Libraries:</strong> Excel, Jupyter Notebook, NumPy, Pandas, Matplotlib</li>
-      <li><strong>Other Tools:</strong> GitHub, Canva, Google Analytics, Google Sheets</li>
-      <li><strong>Soft Skills:</strong> Critical Thinking, Problem Solving, Teamwork, Communication, Adaptability</li>
-    </ul>
-  </div>
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>IIM Bangalore</strong> – BBA in Digital Business & Entrepreneurship (2024–2027)</li>
+        <li><strong>KIIT, Bhubaneswar</strong> – BTech in Computer Science and Communication Engineering (2022–2026)
+          <ul>
+            <li>1st Year CGPA: 8.34</li>
+            <li>2nd Year CGPA: 7.99</li>
+          </ul>
+        </li>
+        <li><strong>DAV Public School, Hehal, Ranchi</strong>
+          <ul>
+            <li>Class 10: 94% (2020)</li>
+            <li>Class 12: 80% (2022)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Tata Motors Forage Certificate – Data Processing & Cleaning Technology (2024)</li>
-      <li>Accenture Forage – Data Analytics and Visualization Simulation (2024)</li>
-      <li>IBM Machine Learning Certificate – Coursera (2023)</li>
-      <li>Google Data Analytics Certificate – Coursera (2023)</li>
-    </ul>
-  </div>
+    <!-- Internship -->
+    <div class="section">
+      <h2>Internship</h2>
+      <p><strong>Multiplier AI</strong> – Hyderabad, Telangana, India (May 2024 – July 2024)</p>
+      <ul>
+        <li>Developed datasets tracking the number of Twitter posts from hospitals</li>
+        <li>Visualized Twitter data for insights</li>
+        <li>Improved data collection, analysis, and visualization techniques</li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>Interests</h2>
-    <p><strong>Sports:</strong> Cricket, Basketball <br />
-       <strong>Movies:</strong> English, Hindi
-    </p>
+    <!-- Skills -->
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, Java, C, HTML, CSS</li>
+        <li><strong>Libraries & Tools:</strong> NumPy, Pandas, Matplotlib, Jupyter, Excel, Google Sheets, Canva</li>
+        <li><strong>Platforms:</strong> GitHub, Google Analytics</li>
+        <li><strong>Soft Skills:</strong> Critical Thinking, Problem Solving, Teamwork, Communication, Adaptability</li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Tata Motors Forage Certificate – Data Processing & Cleaning Technology (2024)</li>
+        <li>Accenture Forage – Data Analytics and Visualization Simulation (2024)</li>
+        <li>IBM Machine Learning Certificate – Coursera (2023)</li>
+        <li>Google Data Analytics Certificate – Coursera (2023)</li>
+      </ul>
+    </div>
+
+    <!-- Interests -->
+    <div class="section">
+      <h2>Interests</h2>
+      <p><strong>Sports:</strong> Cricket, Basketball <br />
+         <strong>Movies:</strong> English, Hindi
+      </p>
+    </div>
+
   </div>
 </body>
 </html>
